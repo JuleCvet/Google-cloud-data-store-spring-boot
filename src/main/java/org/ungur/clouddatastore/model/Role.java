@@ -1,25 +1,30 @@
 package org.ungur.clouddatastore.model;
 
-import java.util.List;
-
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
-public class BatchUser {
+public class Role {
 
-	@NotNull
+    @NotNull
     @Valid
     private List<User> users;
+    
+    private String name;
 
-    public BatchUser() {
+    public Role() {
     }
 
     public List<User> getUsers() {
         return users;
     }
 
-    public BatchUser setUsers(List<User> users) {
+    public Role setUsers(List<User> users) {
         this.users = users;
         return this;
     }
+
+	public String getName() {
+		return name;
+	}
 }
