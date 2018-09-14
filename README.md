@@ -20,3 +20,4 @@ Building
 
     mvn clean package
     java -jar target/clouddatastore-0.0.1-SNAPSHOT.jar"# NoSql-Spring-boot-jsp-App" 
+"# NoSql-Spring-boot-jsp-App" 

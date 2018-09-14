@@ -22,11 +22,11 @@
 
 	<div class="container">
     <form:form method="POST" modelAttribute="updateForm" class="form-signin">
-        <h2 class="form-heading">Update employee</h2>
+        <h2 class="form-heading">Update employee  ${id}</h2>
         
         <spring:bind path="id">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="text" path="id" class="form-control" placeholder="EmployeeId"
+                <form:input type="text" path="id" value = "${user.id }" class="form-control" placeholder="EmployeeId"
                             autofocus="true"></form:input>
                 <form:errors path="id"></form:errors>
             </div>
@@ -42,14 +42,14 @@
 
         <spring:bind path="password">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
+                <form:input type="text" path="password" class="form-control" placeholder="Password"></form:input>
                 <form:errors path="password"></form:errors>
             </div>
         </spring:bind>
 
         <spring:bind path="fullName">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="fullName" path="fullName" class="form-control"
+                <form:input type="text" path="fullName" class="form-control"
                             placeholder="Employee full name"></form:input>
                 <form:errors path="fullName"></form:errors>
             </div>
